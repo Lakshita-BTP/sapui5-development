@@ -6,8 +6,15 @@ sap.ui.define([
 
         return UIComponent.extend("root.Component", {
 
+            metadata: {
+                manifest: "json"
+            },
 
-
+            init: function () {
+                // call the base component's init function
+                UIComponent.prototype.init.apply(this, arguments);
+                console.log(this.getRouter());
+            }
 
         });
     }
