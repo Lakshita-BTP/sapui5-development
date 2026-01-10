@@ -17,13 +17,13 @@
     <!-- <title>Exercise Application</title> -->
     <script id="sap-ui-bootstrap" src="resources/sap-ui-core.js" data-sap-ui-theme="sap_fiori_3"
         data-sap-ui-compatVersion="edge" data-sap-ui-async="true"
-        data-sap-ui-onInit="module:root/index"
-        data-sap-ui-resourceroots='{"root": "./"}'></script>
+        data-sap-ui-onInit="module:sap/ui/core/ComponentSupport" data-sap-ui-resourceroots='{"root": "./"}'></script>
 
 </head>
 
 <body class="sapUiBody" id="content">
-    <!-- <div>Hello World</div> -->
+    <div data-sap-ui-component data-id="container" data-name="root"
+        data-settings='{"id" : "root"}'></div>
 </body>
 
 </html>
